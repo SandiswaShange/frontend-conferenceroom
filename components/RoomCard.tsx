@@ -6,7 +6,7 @@ interface RoomCardProps {
   onSelect: (id: string) => void;
 }
 
-export function RoomCard({room, isSelected, onSelect}: RoomCardProps) {
+export function RoomCard({room, onSelect}: RoomCardProps) {
   return (
     <div className="border p-4 rounded" onClick={() => onSelect(room.id)}>
       <h2 className="text-xl font-semibold">
